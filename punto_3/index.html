@@ -12,7 +12,7 @@
 </head>
 <body>
   <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">
       <img src="logo.png" alt="EducaPro" width="30" height="30"> EducaPro
     </a>
@@ -36,14 +36,24 @@
   <!-- Sección de Cursos destacados -->
   <section id="cursos" class="container my-5">
     <h2 class="text-center mb-4 animate__animated animate__fadeIn">Cursos Destacados</h2>
-    <div class="row">
+    <div class="row d-flex align-items-stretch">
       <div class="col-md-4">
         <div class="card animate__animated animate__fadeInUp">
-          <img class="card-img-top" src="curso1.png" alt="Curso 1">
+          <img class="card-img-top" src="curso1.webp" alt="Curso 1">
           <div class="card-body">
             <h5 class="card-title">Curso 1</h5>
-            <p class="card-text">Aprende los fundamentos de la inteligencia artificial, incluyendo aprendizaje automático, redes neuronales y procesamiento de lenguaje natural. Ideal para principiantes que desean adentrarse en el mundo de la IA.</p>            <button class="btn btn-primary mb-2">Inscribirse</button>
-            <button class="btn btn-secondary" data-toggle="collapse" data-target="#comentariosCurso1" aria-expanded="false" aria-controls="comentariosCurso1">
+            <p class="card-text">
+              Aprende los fundamentos de la inteligencia artificial y desarrolla habilidades clave en áreas como:
+              <ul>
+                <li>Aprendizaje automático (Machine Learning).</li>
+                <li>Redes neuronales y su funcionamiento.</li>
+                <li>Procesamiento de lenguaje natural (NLP).</li>
+                <li>Aplicaciones prácticas de la IA en la vida real.</li>
+              </ul>
+              Este curso es ideal para principiantes que desean adentrarse en el mundo de la IA y explorar su potencial.
+            </p>
+            <button class="btn btn-primary mb-2">Inscribirse</button>
+            <button class="btn btn-secondary mb-2" data-toggle="collapse" data-target="#comentariosCurso1" aria-expanded="false" aria-controls="comentariosCurso1">
               Ver comentarios
             </button>
             <div class="collapse mt-2" id="comentariosCurso1">
@@ -61,9 +71,19 @@
           <img class="card-img-top" src="curso2.jpeg" alt="Curso 2">
           <div class="card-body">
             <h5 class="card-title">Curso 2</h5>
-            <p class="card-text">Descripción breve del curso 2.</p>
+            <p class="card-text">
+              Aprende los fundamentos de la ciberseguridad y cómo proteger sistemas y datos frente a amenazas digitales. Este curso incluye temas como:
+              <ul>
+                <li>Principios básicos de ciberseguridad.</li>
+                <li>Identificación y mitigación de vulnerabilidades.</li>
+                <li>Criptografía y protección de datos.</li>
+                <li>Seguridad en redes y sistemas.</li>
+                <li>Buenas prácticas para prevenir ataques cibernéticos.</li>
+              </ul>
+              Ideal para principiantes interesados en proteger información y sistemas en un entorno digital.
+            </p>
             <button class="btn btn-primary mb-2">Inscribirse</button>
-            <button class="btn btn-secondary" data-toggle="collapse" data-target="#comentariosCurso2" aria-expanded="false" aria-controls="comentariosCurso2">
+            <button class="btn btn-secondary mb-2" data-toggle="collapse" data-target="#comentariosCurso2" aria-expanded="false" aria-controls="comentariosCurso2">
               Ver comentarios
             </button>
             <div class="collapse mt-2" id="comentariosCurso2">
@@ -81,9 +101,19 @@
           <img class="card-img-top" src="curso3.jpg" alt="Curso 3">
           <div class="card-body">
             <h5 class="card-title">Curso 3</h5>
-            <p class="card-text">Descripción breve del curso 3.</p>
+            <p class="card-text">
+              Aprende a analizar, interpretar y visualizar datos para tomar decisiones informadas. Este curso incluye temas como:
+              <ul>
+                <li>Fundamentos de análisis de datos.</li>
+                <li>Uso de herramientas como Excel, Python y R.</li>
+                <li>Visualización de datos con gráficos y dashboards.</li>
+                <li>Introducción a Big Data y análisis avanzado.</li>
+                <li>Aplicaciones prácticas en negocios y tecnología.</li>
+              </ul>
+              Ideal para principiantes y profesionales que buscan mejorar sus habilidades en el manejo de datos.
+            </p>            
             <button class="btn btn-primary mb-2">Inscribirse</button>
-            <button class="btn btn-secondary" data-toggle="collapse" data-target="#comentariosCurso3" aria-expanded="false" aria-controls="comentariosCurso3">
+            <button class="btn btn-secondary mb-2" data-toggle="collapse" data-target="#comentariosCurso3" aria-expanded="false" aria-controls="comentariosCurso3">
               Ver comentarios
             </button>
             <div class="collapse mt-2" id="comentariosCurso3">
@@ -100,42 +130,64 @@
   </section>
 
   <!-- Sección de Planes de pago -->
-  <section class="container my-5" id="planes">
-    <h2 class="text-center mb-4">Planes de Pago</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card text-center">
-          <div class="card-header bg-primary text-white">Básico</div>
-          <div class="card-body">
-            <h3>$10/mes</h3>
-            <p>Acceso limitado a cursos.</p>
-            <button class="btn btn-primary">Seleccionar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card text-center">
-          <div class="card-header bg-success text-white">Intermedio</div>
-          <div class="card-body">
-            <h3>$20/mes</h3>
-            <p>Acceso a la mayoría de los cursos.</p>
-            <button class="btn btn-success">Seleccionar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card text-center">
-          <div class="card-header bg-warning text-white">Avanzado</div>
-          <div class="card-body">
-            <h3>$30/mes</h3>
-            <p>Acceso ilimitado a todos los cursos.</p>
-            <button class="btn btn-warning">Seleccionar</button>
-          </div>
+<section class="container my-5" id="planes">
+  <h2 class="text-center mb-4">Planes de Pago</h2>
+  <div class="row">
+    <!-- Plan Familiar -->
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-header bg-warning text-white">Familiar</div>
+        <div class="card-body">
+          <h3>$50/mes</h3>
+          <p>Ideal para familias o grupos que desean aprender juntos.</p>
+          <ul class="list-unstyled">
+            <li>Acceso ilimitado a todos los cursos.</li>
+            <li>Sesiones interactivas con instructores.</li>
+            <li>Hasta 5 cuentas individuales.</li>
+            <li>Certificaciones premium.</li>
+          </ul>
+          <button class="btn btn-warning">Seleccionar</button>
         </div>
       </div>
     </div>
-  </section>
 
+    <!-- Plan Completo -->
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-header bg-success text-white">Completo</div>
+        <div class="card-body">
+          <h3>$30/mes</h3>
+          <p>Perfecto para quienes buscan acceso completo a los cursos.</p>
+          <ul class="list-unstyled">
+            <li>Acceso ilimitado a todos los cursos.</li>
+            <li>Certificaciones estándar.</li>
+            <li>Sin sesiones interactivas con instructores.</li>
+            <li>1 cuenta individual.</li>
+          </ul>
+          <button class="btn btn-success">Seleccionar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plan Básico -->
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-header bg-primary text-white">Básico</div>
+        <div class="card-body">
+          <h3>$15/mes</h3>
+          <p>Acceso suficiente para quienes desean aprender a su propio ritmo.</p>
+          <ul class="list-unstyled">
+            <li>Acceso limitado a cursos seleccionados.</li>
+            <li>Sin certificaciones.</li>
+            <li>Sin sesiones interactivas con instructores.</li>
+            <li>1 cuenta individual.</li>
+          </ul>
+          <button class="btn btn-primary">Seleccionar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   <!-- Sección de Testimonios -->
   <section class="container my-5">
     <h2 class="text-center mb-4 animate__animated animate__fadeIn">Testimonios</h2>
