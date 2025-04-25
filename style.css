@@ -1,0 +1,48 @@
+/* Variables de colores globales */
+:root {
+    --primary-color: #007bff; /* Azul Bootstrap */
+    --secondary-color: #6c757d; /* Gris Bootstrap */
+    --background-color: #f8f9fa; /* Fondo claro */
+    --text-color: #212529; /* Texto oscuro */
+    --dark-mode-bg: #343a40; /* Fondo oscuro */
+    --dark-mode-text: #ffffff; /* Texto claro */
+  }
+  
+  /* Ajuste para el navbar fijo */
+  body {
+    padding-top: 70px; /* Ajusta este valor según la altura del navbar */
+  }
+  
+  /* Estilo del navbar */
+  .navbar {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    
+  }
+  
+  .navbar a.nav-link {
+    color: var(--text-color);
+  }
+  
+  .navbar a.nav-link:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Modo oscuro */
+  body.bg-dark {
+    background-color: var(--dark-mode-bg) !important;
+    color: var(--dark-mode-text) !important;
+  }
+  
+  body.bg-dark .navbar {
+    background-color: var(--dark-mode-bg) !important;
+    color: var(--dark-mode-text) !important;
+  }
+  
+  body.bg-dark a.nav-link {
+    color: var(--dark-mode-text) !important;
+  }
+  
+  body.bg-dark a.nav-link:hover {
+    color: var(--primary-color) !important;
+  }
